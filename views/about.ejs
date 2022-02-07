@@ -1,19 +1,20 @@
+<!--About Me page-->
 <%- include partials/header.ejs %> 
-
-  
 <%- include partials/main_nav.ejs %>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 style="text-align: left;">About Me</h1>
+
+  <div class="container" style="background-color: beige;">
+    <div class="jumbotron" style="background-color: bisque; margin-top: 100px; margin-bottom: 100px;">
+      <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><%= title%></h1>
       <div>
-        <img src="/Assets/images/profile.jpeg" alt="profile" style="max-height: 150px; float: left;">
+        <img src="/Assets/images/profile.jpeg" alt="profile" style="max-height: 150px; float: left; margin-right: 30px;">
       </div>
       <div style="text-align: justify;">
-        <p>I am a self-motivated hard-working person who loves to learn new skills. I am from India and I have completed
+        <h6 style="font-style:italic; font-family: 'Times New Roman', Times, serif; font-size: large;">
+          I am a self-motivated hard-working person who loves to learn new skills. I am from India and I have completed
           my Bachelor's in Electronics and Communication Engineering. Currently, I am a student
           at Centennial colleger enrolled in the course Software Engineering
           Technology - Artifical Intelligence.   
-        </p>
+        </h6>
       </div>
       <div style="text-align: center;">
         <a href="/Assets/resume.pdf" class="btn btn-link btn-sm" target="blank">My Resume</a>

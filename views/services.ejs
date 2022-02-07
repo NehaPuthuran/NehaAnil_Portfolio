@@ -1,14 +1,36 @@
-<%- include partials/header.ejs %> 
-
-  
+<!--Services page-->
+<%- include partials/header.ejs %>   
 <%- include partials/main_nav.ejs %>
-  <div class="container">
 
-    <div class="text-sm-center jumbotron">
-      <h6>Services</h6>
-    </div>
+<div class="container">
+  <div class="text-sm-center jumbotron" style="background-color: beige; margin: 50px;">
+    <h1><b><%= title%></b></h1>
+      <div class="row" >
+        <div style="float: left; width: 25%; padding: 0 30px;">
+          <div class="card" style="width: 20rem; margin-left: 150px;">
+            <img src="/Assets/images/image1.jpg">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h6 class="card-title">Web Development</h6>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="float: left; width: 25%; padding: 0 30px;">
+          <div class="card" style="width: 20rem; margin-left: 250px;">
+            <img src="/Assets/images/image2.jpg">
+            <div class="card" style="width: 20rem;">
+              <div class="card-body">
+                <h6 class="card-title">Programming(Java and C++)</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   </main>
-
 
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>
