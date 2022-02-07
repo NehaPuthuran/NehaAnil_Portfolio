@@ -23,7 +23,6 @@
   },
   "description": "portfolio",
   "main": "app.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NehaPuthuran/NehaAnil_Portfolio.git"
