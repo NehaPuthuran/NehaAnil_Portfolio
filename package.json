@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "assignment1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -20,5 +20,18 @@
     "jquery": "^3.6.0",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "portfolio",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NehaPuthuran/NehaAnil_Portfolio.git"
+  },
+  "author": "Neha Anil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NehaPuthuran/NehaAnil_Portfolio/issues"
+  },
+  "homepage": "https://github.com/NehaPuthuran/NehaAnil_Portfolio#readme"
 }
