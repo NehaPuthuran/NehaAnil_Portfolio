@@ -1,0 +1,43 @@
+<%- include partials/header.ejs %>   
+<%- include partials/main_nav.ejs %>
+
+<main class="container">
+    <div class="row">
+        <div class="md-offset-1 col-md-10">
+            <h1><%= title %></h1>
+            <br>
+            <table class="table table-bordered table-striped table-hover">
+                <!--Header Row-->
+                <tr>
+                    <th class="text-center">Contact Name</th>
+                    <th class="text-center">Contact Number</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center col-1"></th>
+                    <th class="text-center col-1"></th>
+
+                </tr>
+
+                <% for(let count = 0; count < BusinessContactList.length; count++){ %>
+                    <tr>
+                        <td class="text-center"><%= BusinessContactList[count].contactName %> </td>
+                        <td class="text-center"><%= BusinessContactList[count].contactNumber %> </td>
+                        <td class="text-center"><%= BusinessContactList[count].email %> </td>
+                        <td class="text-center col-1">
+                            <a href="/businessContactList/update/<%= BusinessContactList[count]._id %>" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-pencil alt">Update</i></a>
+                        </td>
+                        <td class="text-center col-1">
+                            <a href="/businessContactList/remove/<%= BusinessContactList[count]._id %>" class="btn btn-outline-danger btn-sm">
+                            <i class="fas fa-trash-alt">Delete</i></a>
+                        </td>
+                    </tr>
+                <%  } %> 
+            </table>
+        </div>
+    </div>
+</main>
+
+
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
