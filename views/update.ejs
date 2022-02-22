@@ -13,7 +13,8 @@
                     <input type="text" class="form-control"
                     id="nameTextField"
                     placeholder="Enter Name"
-                    name="contactName" 
+                    name="contactName"
+                    value="<%= businessContacts.contactName %>" 
                     required>
                 </div>
 
@@ -25,6 +26,7 @@
                     name="contactNumber" 
                     minlength="10"
                     maxlength="10"
+                    value="<%= businessContacts.contactNumber %>"
                     required>
                 </div>
 
@@ -34,6 +36,7 @@
                     id="emailTextField"
                     placeholder="Enter Email Address"
                     name="email"
+                    value="<%= businessContacts.email %>"
                     required>
                 </div>
                 

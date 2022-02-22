@@ -38,7 +38,7 @@ router.get('/',requireAuth, (req, res, next) => {
 
 //GET route to update business contacts list page - UPDATE operation
 router.get('/update/:id',requireAuth, (req, res, next) => {
-    let id = req.params._id
+    let id = req.params.id
 
     BusinessContacts.findById(id, (err, businessContactToEdit) => {
         if(err)
